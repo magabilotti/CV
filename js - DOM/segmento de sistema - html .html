@@ -1,0 +1,88 @@
+<div class="m-5">
+  <div class="title">
+    <h3>Piezas</h3>
+  </div>  
+  <div>
+
+    <div class="col-5 m-3">
+      <div class="input-group mb-3">
+        <input id="buscarBasico" type="text" class="form-control" placeholder="Básico" aria-label="Básico">
+        <span class="input-group-text">/</span>
+        <input id="buscarPrefijo" type="text" class="form-control" placeholder="Prefijo" aria-label="Prefijo">
+        <span class="input-group-text">/</span>
+        <input id="buscarSufijo" type="text" class="form-control" placeholder="Sufijo" aria-label="Sufijo">
+        <span class="input-group-text">/</span>
+        <input id="buscarSufijo2" type="text" class="form-control" placeholder="Sufijo2" aria-label="Sufijo2">
+        <button class="btn btn-outline-secondary" type="button" id="buttonbuscar-piezas">Buscar</button>
+      </div>
+    </div>
+
+    <div class="table-container align-items-center justify-content-center">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Cod. Pieza</th>
+            <th scope="col">Descripción</th>
+            <!--<th scope="col">Precio C/IVA</th>
+            <th scope="col">Precio S/IVA</th>-->
+            <th scope="col">Stock</th>
+            <!--<th scope="col"></th>-->
+            <th scope="col"> </th>
+          </tr>
+        </thead>
+        <tbody class="tbody-piezas" id="table-body-pieza">
+          <!-- Aquí se agregarán las filas generadas -->
+        </tbody>
+      </table>
+    </div>
+
+    <nav class="pt-3" aria-label="Page navigation example">
+      <ul class="pagination justify-content-center" id="paginationPiezas">
+
+      </ul>
+    </nav>
+
+    <!-- Modal Sumar pieza -->
+    <div class="modal fade show" id="modalMorePieza" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Sumar al Pedido</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="modalContentMore">
+              <!--Aquí se mostrarán la cantidad que quiero sumar al pedidox-->
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="modalActionButtonMorePiezas" data-bs-dismiss="modal">Cargar al Pedido</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Detalle pieza-->
+    <div class="modal fade show" id="modalPiezaView" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Detalles de la Pieza</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="modalContentView">
+              <!-- Aquí se mostrarán los detalles de la pieza -->
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="{{ url_for('static', path= 'js/piezas.js') }}"></script>
