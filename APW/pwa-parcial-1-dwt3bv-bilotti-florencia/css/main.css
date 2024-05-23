@@ -1,0 +1,97 @@
+.back-nav{
+background-color: #ffd521;
+}
+h5.modal-title{
+    color: #0d6efd;
+}
+
+.nav-link{
+    color: #0d6efd;
+    margin: 15px;
+
+}
+input{
+ margin-top: 5%;
+}
+
+img{
+    height: 15rem;
+    width: 20rem;
+    object-fit: contain;
+}
+
+img.img-index{
+    height: auto;
+    width: 100%;
+    padding: 0px;
+}
+
+.img-fav{
+align-items: center;
+}
+.card{
+    float:right;
+    padding: 15px;
+    --bs-card-border-color: rgba(0, 0, 0, 0);
+}
+
+.modal-footer{
+    display: -webkit-inline-box;
+}
+.text-modal-footer{
+    color: darkgray;
+}
+footer{
+    padding-top: 15px;
+}
+
+footer, p{
+    text-align: center;
+    color: black;
+}
+
+.title{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.bloqueImg{
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.bloqueDetalle{
+    float: right;
+    text-align: center;
+}
+
+.dellateFav{
+    padding-top: 10%;
+    margin-right:50px;
+}
+
+div.favoritesContainer{
+    padding-top: 10px;
+    margin: 20px;
+}
+
+.perFav{
+margin: 0px;
+padding: 0px;
+border-color: blue;
+border-bottom: solid;
+}
+
+.btn-install{
+display: none;
+cursor: pointer;
+position: fixed;
+bottom:0px;
+left: 0px;
+color: white;
+background: red;
+padding: 20px;
+font-size: 20px;
+
+}
