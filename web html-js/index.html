@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campus IUSM</title>
+    <link rel="shortcut icon" href="img/icon/favicon.ico" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/animation.css" />
+  </head>
+
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"></script>
+
+    <!-- head -->
+    <div class="text-bg-dark">
+      <img src="img/pna-ingresos.png" class="card-img" alt="..." />
+      <div class="card-img-overlay p-3">
+        <header></header>
+        <main class="px-md-2 text-center">
+          <h1
+            class="d-block d-sm-none mt-0 animate__animated animate__fadeIn etapastitle">
+            Unidades 
+            <br />
+            Académicas
+          </h1>
+          <h1
+            class="d-none d-sm-block animate__animated animate__fadeIn etapastitle">
+            Unidades 
+            <br />
+            Académicas
+          </h1>
+        </main>
+      </div>
+    </div>
+    <!-- body -->
+    <div
+      class="d-none d-md-block container-fluid textbanner lead"
+      style="position: relative; z-index: 3">
+      <div class="row text-center m-0" style="background-color: #074e70">
+        <div class="col-4 ps-5 p-0 d-flex align-items-end">
+          <img
+            src="img/inscripcionesindex.png"
+            alt=""
+            class="img-fluid ps-3"
+            style="
+              margin-top: -30px;
+              filter: drop-shadow(-8px -8px 8px rgba(0, 0, 0, 0.5));
+            " />
+        </div>
+        <div
+          class="col-7 p-2 text-center"
+          style="
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          ">
+          <p class="font-weight-light" style="margin-bottom: 0">
+            Haga click en "Ingresar a la Plataforma" para ir al campus virtual de la escuela correspondiente
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="d-block d-md-none container-fluid textbanner lead"
+      style="position: relative">
+      <div class="row text-center m-0" style="background-color: #074e70">
+        <div class="col-5 p-0 d-flex align-items-end">
+          <img
+            src="img/inscripcionesindex.png"
+            alt=""
+            class="img-fluid ps-3"
+            style="filter: drop-shadow(-8px -8px 8px rgba(0, 0, 0, 0.5))" />
+        </div>
+        <div
+          class="col-7 p-2 text-center"
+          style="
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          ">
+          <p
+            class="font-weight-light"
+            style="margin-bottom: 0; font-size: medium">
+            Haga click en "Ingresar a la Plataforma" para ir al campus virtual de la escuela correspondiente
+          </p>
+        </div>
+      </div>
+    </div>
+    <main>
+
+      <main>
+        <div
+          class="container-fluid"
+          style="
+            text-align: end;
+            padding-top: 30px;
+            padding-bottom: 0px;
+            padding-left: 7%;
+            padding-right: 15%;
+          ">
+          <div class="col-12">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a>
+                    <strong style="color: rgb(119, 119, 120)">
+                      Acceso a Plataformas Educativas de PNA
+                    </strong>
+                  </a>
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </main>
+
+      <div class="row px-0 mx-0 text-start">
+        <div class="container-fluid">
+          <div class="row align-items-start">
+            <div
+              class="row"
+              style="
+                padding-right: 0px;
+                margin-right: 0px;
+                margin-left: 0px;
+                padding-left: 0px;
+              ">
+              <div id="schools" class="p-0">
+                <!-- Aquí se mostrarán las escuelas agregadas dinámicamente -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Direcciones y Mapa -->
+      <div class="container-fluid" id="contacto">
+        <div class="row align-items-start" style="background-color: #0874a7">
+          <!-- Direcciones -->
+          <div class="col-lg-6" style="background-color: #0874a7; padding: 5%">
+            <h4 style="color: white; margin-bottom: 5%">
+              Centros de Educación
+            </h4>
+            <ul
+              id="scroll1"
+              class="list-group list-group-flush fs-6"
+              style="--bs-list-group-bg: transparent">
+              
+              <li class="list-group-item" style="color: white; font-size: 12px; border-bottom-width: 2px; border-top-width: 0px; border-right-width: 0px; border-left-width: 0px;">
+                <div class="row align-items-center p-1 justify-content-between">  
+                    <div class="col-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16"><path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>
+                    </div>
+                    <div class="col-8">  
+                    <strong><h6>DIRECCIÓN DE EDUCACIÓN</h6></strong>
+                        Av. Corrientes 345 (piso 12)<br>
+                        CABA - Bs As - Argentina<br>
+                        ingresosaprefectura@prefecturanaval.edu.ar<br>
+                        011 45767610 /11 /13 - int 118 / 120
+                    </div>
+                    <div class="col-2">
+                        <button type="button" class="btn btn-outline-light" style="float:right;" onclick="loadIframe('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0473144302723!2d-58.37440912405959!3d-34.60296505745874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacd337223cb%3A0x8da9e16853b57ecd!2sAv.%20Corrientes%20345%2C%20C1043%20CABA!5e0!3m2!1ses!2sar!4v1694801265600!5m2!1ses!2sar')">Ver</button>
+                    </div>
+                </div>
+                </li>   
+                <li class="list-group-item" style="color: white; font-size: 12px; border-bottom-width: 2px; border-top-width: 0px; border-right-width: 0px; border-left-width: 0px; padding-bottom:10px">
+                    <div class="row align-items-center p-2 justify-content-between">  
+                        <div class="col-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16"><path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>
+                        </div>
+                        <div class="col-8">  
+                        <strong><h6>ESCUELA DE CADETES DE PREFECTURA</h6></strong>
+                            Crucero General Belgrano 302<br>
+                            Zárate - Bs As - Argentina<br>
+                            03487 438013 
+                        </div>
+                        <div class="col-2">
+                            <button type="button" class="btn btn-outline-light" style="float:right;" onclick="loadIframe('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4843.978854402824!2d-59.02673334723057!3d-34.089740987537944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bb0b6508da21bd%3A0x841bbdc8f3cd9ed1!2sEscuela%20de%20Oficiales%20de%20PNA%20Gral.%20Matias%20de%20Irigoyen!5e0!3m2!1ses!2sar!4v1694801322385!5m2!1ses!2sar')">Ver</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item" style="color: white; font-size: 12px; border-bottom-width: 2px; border-top-width: 0px; border-right-width: 0px; border-left-width: 0px; padding-bottom:10px">
+                    <div class="row align-items-center p-2 justify-content-between">  
+                        <div class="col-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16"><path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>
+                        </div>
+                        <div class="col-8">  
+                        <strong><h6>ESCUELA DE SUBOFICIALES DE PREFECTURA</h6></strong>
+                            Crucero General Belgrano 302<br>
+                            Zárate - Bs As - Argentina<br>
+                            03487 438013 
+                        </div>
+                        <div class="col-2">
+                            <button type="button" class="btn btn-outline-light" style="float:right;" onclick="loadIframe('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4843.978854402824!2d-59.02673334723057!3d-34.089740987537944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bb0b62242fdd3b%3A0xf9897317c2f758cf!2sEscuela%20De%20Suboficiales%20De%20La%20PNA%20Dn.%20Martin%20Jacobo%20Thompson!5e0!3m2!1ses!2sar!4v1694801343178!5m2!1ses!2sar')">Ver</button>
+                        </div>
+                    </div>
+                </li>  
+              
+              <li
+                class="list-group-item"
+                style="
+                  color: white;
+                  font-size: 12px;
+                  border-bottom-width: 2px;
+                  border-top-width: 0px;
+                  border-right-width: 0px;
+                  border-left-width: 0px;
+                ">
+                <div class="row align-items-center p-1 justify-content-between">
+                  <div class="col-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="40"
+                      height="40"
+                      fill="currentColor"
+                      class="bi bi-geo-alt-fill"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                    </svg>
+                  </div>
+                  <div class="col-8">
+                    <strong>
+                      <h6>
+                        Escuela Nacional Superior de Salvamento y Buceo(ENSS)
+                      </h6>
+                    </strong>
+                    <p>
+                      Av. Tomás Alva Edison 2280
+                      <br />
+                      Ciudad Autónoma de Buenos Aires
+                      <br />
+                      (011) 43130021
+                    </p>
+                  </div>
+                  <div class="col-2">
+                    <button
+                      type="button"
+                      class="btn btn-outline-light"
+                      style="float: right"
+                      onclick="loadIframe('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.1260619089826!2d-58.38324172426111!3d-34.57567667296422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaab7351e305%3A0x5434207a2399482e!2sEscuela%20Nacional%20Superior%20de%20Salvamento%20y%20Buceo!5e0!3m2!1ses!2sar!4v1712840445382!5m2!1ses!2sar')">
+                      Ver
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="list-group-item"
+                style="
+                  color: white;
+                  font-size: 12px;
+                  border-bottom-width: 2px;
+                  border-top-width: 0px;
+                  border-right-width: 0px;
+                  border-left-width: 0px;
+                ">
+                <div class="row align-items-center p-1 justify-content-between">
+                  <div class="col-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="40"
+                      height="40"
+                      fill="currentColor"
+                      class="bi bi-geo-alt-fill"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                    </svg>
+                  </div>
+                  <div class="col-8">
+                    <strong>
+                      <h6>
+                        Centro de Reentrenamiento y Perfeccionamiento
+                        Policial(CRPP)
+                      </h6>
+                    </strong>
+                    <p>
+                      Calle Alférez Pareja Nº 152 Puerto Madero Sur,
+                      <br />
+                      Ciudad Autónoma de Buenos Aires
+                      <br />
+                      aggu-crpp@prefecturanaval.gov.ar
+                      <br />
+                      (011) 4307-5458 Interno 4846
+                    </p>
+                  </div>
+                  <div class="col-2">
+                    <button
+                      type="button"
+                      class="btn btn-outline-light"
+                      style="float: right"
+                      onclick="loadIframe('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1641.6313731935277!2d-58.35658652662344!3d-34.62279994618397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334c46443bf63%3A0xf015729415947688!2sAGGU!5e0!3m2!1ses!2sar!4v1712841501996!5m2!1ses!2sar')">
+                      Ver
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="list-group-item"
+                style="
+                  color: white;
+                  font-size: 12px;
+                  border-bottom-width: 2px;
+                  border-top-width: 0px;
+                  border-right-width: 0px;
+                  border-left-width: 0px;
+                  padding-bottom: 10px;
+                ">
+                <div class="row align-items-center p-2 justify-content-between">
+                  <div class="col-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="40"
+                      height="40"
+                      fill="currentColor"
+                      class="bi bi-geo-alt-fill"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                    </svg>
+                  </div>
+                  <div class="col-8">
+                    <strong>
+                      <h6>
+                        Centro de Perfeccionamiento en Tecnología Naval(CPTN)
+                      </h6>
+                    </strong>
+                    <p>
+                      Avenida Thomas Edison N° 2399, dársena E
+                      <br />
+                      Puerto Nuevo, Ciudad Autónoma de Buenos Aires (CP 1104)
+                      <br />
+                      cptn2019@gmail.com
+                      <br />
+                      (0054 11) 4576 7627 / 4576 7628
+                    </p>
+                  </div>
+                  <div class="col-2">
+                    <button
+                      type="button"
+                      class="btn btn-outline-light"
+                      style="float: right"
+                      onclick="loadIframe('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1642.5880093032697!2d-58.382810545291846!3d-34.57441249354381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb55772e6cfe5%3A0xeb223d10e5049836!2sServicio%20de%20Buques%20Guardacostas%2C%20Prefectura%20Naval%20Argentina!5e0!3m2!1ses!2sar!4v1712841591616!5m2!1ses!2sar')">
+                      Ver
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="list-group-item"
+                style="
+                  color: white;
+                  font-size: 12px;
+                  border-bottom-width: 2px;
+                  border-top-width: 0px;
+                  border-right-width: 0px;
+                  border-left-width: 0px;
+                  padding-bottom: 10px;
+                ">
+                <div class="row align-items-center p-2 justify-content-between">
+                  <div class="col-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="40"
+                      height="40"
+                      fill="currentColor"
+                      class="bi bi-geo-alt-fill"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                    </svg>
+                  </div>
+                  <div class="col-8">
+                    <strong>
+                      <h6>Centro de Extensión Profesional Aeronáutica(CEPA)</h6>
+                    </strong>
+                    <p>
+                      Aeropuerto Internacional San Fernando, Ruta 202, Km 3
+                      <br />
+                      San Fernando, Provincia de Buenos Aires (CP B1646)
+                      <br />
+                      cepapna@gmail.com
+                      <br />
+                      (0054 11) 4580 0100 / 4580 0101 Interno 109
+                    </p>
+                  </div>
+                  <div class="col-2">
+                    <button
+                      type="button"
+                      class="btn btn-outline-light"
+                      style="float: right"
+                      onclick="loadIframe('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1163.1962386977718!2d-58.58015549650223!3d-34.45174698556756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca514ecd5b579%3A0x975c3c60a839730e!2sSEAV%20PNA!5e0!3m2!1ses!2sar!4v1712841697071!5m2!1ses!2sar')">
+                      Ver
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="list-group-item"
+                style="
+                  color: white;
+                  font-size: 12px;
+                  border-bottom-width: 2px;
+                  border-top-width: 0px;
+                  border-right-width: 0px;
+                  border-left-width: 0px;
+                  padding-bottom: 10px;
+                ">
+                <div class="row align-items-center p-2 justify-content-between">
+                  <div class="col-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="40"
+                      height="40"
+                      fill="currentColor"
+                      class="bi bi-geo-alt-fill"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                    </svg>
+                  </div>
+                  <div class="col-8">
+                    <strong>
+                      <h6>
+                        Centro Regional de Extensión Universitaria Buenos
+                        Aires(CREU)
+                      </h6>
+                    </strong>
+                    <p>
+                      Calle Prefectura Naval Argentina s/n y Avenida Ramón
+                      Castillo
+                      <br />
+                      Ciudad Autónoma de Buenos Aires (CP: 1104)
+                      <br />
+                      pzrp-creualumnos@prefecturanaval.gov.ar
+                      <br />
+                      03487 438013
+                    </p>
+                  </div>
+                  <div class="col-2">
+                    <button
+                      type="button"
+                      class="btn btn-outline-light"
+                      style="float: right"
+                      onclick="loadIframe('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.930069339815!2d-58.37933269743213!3d-34.58063597296265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaabfa80f517%3A0x580d003c18d61bdc!2sPrefectura%20Naval%20Argentina%20(%20carnet%20conductor%20nautico%20)!5e0!3m2!1ses!2sar!4v1712841909811!5m2!1ses!2sar')">
+                      Ver
+                    </button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Mapa -->
+          <div
+            class="col-lg-6 container-fluid"
+            style="padding-left: 0px; padding-right: 0px">
+            <iframe
+              id="mapaIframe"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0473144302723!2d-58.37440912405959!3d-34.60296505745874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacd337223cb%3A0x8da9e16853b57ecd!2sAv.%20Corrientes%20345%2C%20C1043%20CABA!5e0!3m2!1ses!2sar!4v1694801265600!5m2!1ses!2sar"
+              width="800"
+              height="550"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer></footer>
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
